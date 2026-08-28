@@ -20,7 +20,7 @@
     if($loginValido){
         echo 'Login realizado com sucesso!';
     } else{
-        header('Location: login.php?login=erro');
+        header('Location: index.php?login=erro');
         exit;
     }
 

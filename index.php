@@ -24,6 +24,12 @@
                 <input type="submit" value="LOGIN" class="btn-login">
             </div>
         </form>
+        <?php
+            //Condição para lançar login e senha inválidos:
+            if(isset($_GET['login']) && $_GET['login'] == 'erro'){
+                echo '<p class="erro">Usuário ou senha inválidos!</p>';
+                }   
+        ?>
     </main>
 </body>
 </html>
